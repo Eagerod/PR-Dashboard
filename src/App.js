@@ -26,7 +26,7 @@ class App extends React.Component {
       showUserPrs: cookieContents.showUserPrs,
       showGroupPrs: cookieContents.showGroupPrs,
       isSettingsMenuOpen: false,
-      showGridView: cookieContents.showGridView || false,
+      showGridView: cookieContents.showGridView || true,
       dismissedRepos: cookieContents.dismissedRepos || [],
       loading: false,
     };
@@ -35,6 +35,9 @@ class App extends React.Component {
   componentDidMount() {
     this.selectFilterTabs();
     this.getPRs();
+    if (!this.state.showUserPrs && !this.state.showGroupPrs) {
+      this.selectFilterAll();
+    }
   }
 
   getPRs() {
