@@ -1,4 +1,4 @@
-# Pull Request Dashboard
+# MappedIn Pull Request Dashboard
 
 ## Problem
 It’s very difficult to determine what PRs need my attention. 
@@ -27,6 +27,9 @@ Webpage refreshes data in the background every 10 minutes.
 PRs drop off the page when you review (accept or leave comments).
 PRs show back up on the list if review is requested again.
 
+## Usage
+Set up a gitHub token with 'repo' access. Provide it to the app alongside your username and organization group name.
+
 ## Future Additions
 Webpage also has an easy way to get to the user’s own posted PRs.
 GitHub authentication instead of using token.
@@ -36,3 +39,4 @@ Webpage has desktop notifications you can enable when new PRs are posted.
 
 ## Open Source
 There are a lot of people asking for the `OR` operator and GitHub is ignoring their requests. It would be cool to publish this resource as an open source tool.  See: https://github.com/isaacs/github/issues/660 Idea for open source tool: Custom search field that lets you apply any number of Github search params, and ORs them all.
+
