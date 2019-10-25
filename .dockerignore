@@ -1,0 +1,16 @@
+**/.DS_Store
+
+# Docker files
+Dockerfile
+.dockerignore
+
+# Git files
+**/.git
+**/*.orig
+**/.gitignore
+
+# General project files
+README.md
+
+# Node.js
+node_modules
